@@ -12,7 +12,7 @@ fun main() {
     for (valor in values){
         println(valor)
     }
-    println("=========================================")
+    println("--------------------------------------")
     values.forEach { valor ->
         println(valor)
     }
