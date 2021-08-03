@@ -14,13 +14,16 @@ fun main() {
 
     println("==========================================================")
 
-    funcionarios.sortedBy { it.salario }
+    funcionarios
+        .sortedBy { it.salario }
         .forEach{println(it)}
 
     println("==========================================================")
 
-    funcionarios.groupBy { it.tipoContratacao }
+    funcionarios
+        .groupBy { it.tipoContratacao }
         .forEach{println(it)}
+
 }
 
 data class Funcionario(
@@ -31,7 +34,6 @@ data class Funcionario(
     override fun toString(): String =
             """
                 Nome: $nome
-                Salario: $salario
-                
+                Salario: $salario  
             """.trimIndent()
 }
